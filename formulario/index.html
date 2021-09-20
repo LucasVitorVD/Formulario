@@ -5,38 +5,55 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulário</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>freeCodeCamp Survey Form</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="paragraf-princ">Thank you for taking the time to help us improve the platform</p>
   </header>
+
   <main>
     <form>
-      <label for="name">Nome</label>
-      <input type="text" placeholder="Digite seu nome">
-      <label for="email">Email</label>
-      <input type="text" placeholder="Digite seu email">
-      <label for="Age">Idade (opcional)</label>
-      <input type="number" placeholder="Idade">
-      <label for="option">Qual destas opções melhor descreve a sua situação atual?</label>
+      <div class="input-info">
+        <p>Nome</p>
+        <input type="text" required placeholder="Digite seu nome">
+        <p>Email</p>
+        <input type="text" placeholder="Digite seu email">
+        <p>Idade (opcional)</p>
+        <input type="number" placeholder="Idade">
+      </div>
+
+      <p>Qual destas opções melhor descreve a sua situação atual?</p>
       <select required>
         <option>Iniciante</option>
         <option>Júnior</option>
         <option>Sênior</option>
       </select>
-      <label for="option">Qual dessas opções você se encaixa?</label>
+      <p>Qual dessas opções você se encaixa?</p>
       <select>
         <option value="frontend">Front-end</option>
         <option value="backend">Back-end</option>
         <option value="fullstack">Fullstack</option>
       </select>
-      <label for="option">Você recomendaria a freeCodeCamp para um amigo?</label>
-      <input type="radio" name="def" value="definitivamente">Definitivamente
-      <input type="radio" name="Tal" value="talvez">Talvez
-      <input type="radio" name="ntc" value="nao tenho certeza">Não tenho certeza
-      <label for="sugestao">Você tem algum comentário ou sujestoes?</label>
-      <input type="textarea" placeholder="Digite aqui...">
+
+      <div>
+        <p>Você recomendaria a freeCodeCamp para um amigo?</p>
+        <input class="input_radio" type="radio" value="0" name="campo-radio" id="campo-radio1" >
+        <label for="campo-radio1">Definitivamente</label>
+        <br>
+        <input class="input_radio" type="radio" value="0" name="campo-radio" id="campo-radio2" >
+        <label for="campo-radio2">Talvez</label>
+        <br>
+        <input class="input_radio" type="radio" value="0" name="campo-radio" id="campo-radio3" >
+        <label for="campo-radio3">Não tenho certeza</label> 
+      </div>
+
+      <div class="textarea_margin">
+        <p>Você tem algum comentário ou sugestões?</p>
+        <textarea placeholder="Digite aqui..."></textarea>
+      </div>
+
       <button>Enviar</button>
     </form>
   </main>
