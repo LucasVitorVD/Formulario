@@ -7,13 +7,12 @@
 
 body {
   background-image: linear-gradient(to top,#020024 30%, #732faf);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
   text-align: center;
   margin: 20px;
-  font-family: 'Roboto', sans-serif;
   font-style: normal;
   color: white;
 }
@@ -22,7 +21,6 @@ header {
   margin-top: 10px;
   font-style: italic;
   font-weight: 100;
-  font-family: 'Roboto', sans-serif;
 }
 
 main {
@@ -101,4 +99,22 @@ button {
 
 button:hover {
   opacity: 0.9;
+}
+
+@media (max-width: 420px) {
+  main {
+    height: 900px;
+    width: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    height: 950px;
+    width: 700px;
+  }
+
+  button {
+    margin-top: 45px;
+  }
 }
